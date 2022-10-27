@@ -1,0 +1,28 @@
+import 'package:flutter/material.dart';
+void main(){
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget{
+  const MyApp({Key? key}) : super(key:key);//1.constructor
+
+  @override
+  Widget build(BuildContext context) {
+    //2.build
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+            title: Text("Flutter Home")
+        ),
+        body: Center(
+          child: Text(
+            "Hello world",
+            style: TextStyle(
+              fontSize: 40,
+              fontWeight: Fo
+          ),
+        ),
+      ),
+    );
+  }
+}
